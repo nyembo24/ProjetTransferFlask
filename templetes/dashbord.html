@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/bootsrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="scroll">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container-fluid px-4">
+
+        <!-- Logo + Info -->
+        <div class="d-flex align-items-center gap-3">
+            <img src="../static/images/images.png" alt="logo" width="55">
+            <div>
+                <h5 class="mb-0 fw-bold text-primary">P2P Share LAN</h5>
+                <small class="text-muted">
+                    <i class="bi bi-wifi"></i> 192.168.1.100:5000
+                </small>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="d-flex gap-2">
+            <span class="badge bg-success px-3 py-2">
+                <i class="bi bi-check-circle"></i> Connecté
+            </span>
+            <button class="btn btn-outline-primary">
+                <i class="bi bi-person"></i> Utilisateur
+            </button>
+            <button class="btn btn-outline-danger">
+                <i class="bi bi-box-arrow-right"></i>
+            </button>
+        </div>
+
+    </div>
+</nav>
+
+<div class="app">
+
+    <!-- MENU -->
+    <aside class="menu-container">
+        <div class="card menu-card">
+            <ul class="menu">
+                <li>
+                    <a href="#" class="active">
+                        <i class="bi bi-chat-dots"></i>
+                        <span>Chat</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-folder-arrow-up"></i>
+                        <span>Transfert fichiers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-gear"></i>
+                        <span>Paramètres</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- CHAT -->
+    <main class="chat">
+        <iframe src="transfer.html" frameborder="0" width="100%" height="100%"></iframe>
+    </main>
+
+</div>
+
+<script src="../static/js/bootstrap.bundle.js"></script>
+</body>
+</html>

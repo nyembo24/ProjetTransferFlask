@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion | P2P Share</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="col-lg-4 login-page p-4">
+        <div class="center">
+            <img src="../static/images/images.png" alt="" width="90">
+            <h1>P2P Share LAN</h1>
+            <p>Connexion au réseau local</p>
+        </div>
+        <form action="" method="post">
+            <div class="mb-3">
+                <label for="" class="form-label">address ip du serveur</label>
+                <input class="form-control" type="text" required placeholder="ex:192.168.1.43">
+            </div>
+             <div class="mb-3">
+                <label for="" class="form-label">Port</label>
+                <input class="form-control" type="number" required placeholder="ex:5000">
+            </div>
+             <div class="mb-3">
+                <label for="" class="form-label">Nom d'utilisateur</label>
+                <input class="form-control" type="text" required placeholder="Votre nom (pour affichage)">
+                <p>Ce nom sera visible dans le chat</p>
+            </div>
+             <div class="mb-3">
+                <label for="" class="form-label">Mots de passe</label>
+                <input class="form-control" type="text" required placeholder="entrer le mot de passe du seurveur">
+            </div>
+            <button class="btn btn-success connecter w-100">Se connecter</button>
+        </form>
+    </div>
+</body>
+</html>
